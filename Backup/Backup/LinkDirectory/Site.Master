@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LinkDirectory.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="Styles/main.css" />
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="Styles/main-msie.css" /><![endif]-->
+    <link rel="stylesheet" media="print" type="text/css" href="Styles/print.css" />
+    <script type="text/javascript" src="Scripts/prototype.js"></script>
+    <script type="text/javascript" src="Scripts/tabs.js"></script>
+    <script type="text/javascript" src="Scripts/tooltip.js"></script>
+    <script type="text/javascript" src="Scripts/showdetail.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+   <div id="main">
+
+    <!-- Header -->
+    <div id="header">
+
+        <h1 id="logo"><a href="Default.aspx" title="[Go to homepage]"><img src="images/logo.gif" alt="Logo" /></a></h1>
+
+        <hr class="noscreen" />
+
+        <!-- Date -->
+        <div class="date date-24">
+            <p class="nom"><strong>Monday, March 24th 2009</strong><br />
+            <!--<span class="nonhigh"><a href="">Make Catalogio your homepage</a></span>-->
+            </p>
+        </div> <!-- /date -->
+
+    <hr class="noscreen" />
+    </div> <!-- /header -->
+
+
+    <!-- Search -->
+    <div id="search-top"></div>
+    <div id="search">
+        <div id="search-in">
+
+            <div id="s01">
+                <form action="" method="get">
+                    <p class="nom t-center">
+                        <label for="search-input01">Search:</label>
+                        <input type="text" size="75" name="" id="search-input01" />
+                        <input type="image" value="Search" src="images/search-button.gif" class="search-submit" />
+                    </p>
+                </form>
+            </div>
+
+            
+
+            
+
+            
+
+        <hr class="noscreen" />
+        </div> <!-- /search-in -->
+    </div> <!-- /search -->
+    <div id="search-bottom"></div>
+
+   
+
+    <!-- Content -->
+
+    <div id="page" class="box">
+    </div> 
+     <!-- /page -->
+       <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer">
+    <hr class="noscreen" />
+
+        <p class="f-right noprint">
+            <a href="">Sitemap</a>,
+            <a href="Contact.aspx">Contact</a>
+        </p>
+
+        <p>&copy;&nbsp;2010 <a href="">Your Company</a> | <a href="">Privacy Policy</a>
+        </p>
+        <br />
+
+
+    </div> 
+    <!-- /footer -->
+
+</div> <!-- /main -->
+
+
+      
+       
+   
+    
+    </form>
+</body>
+</html>

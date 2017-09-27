@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="LinkDirectory.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"  href="main.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+	
+		<h1 class="logo">Link Directory Admin Panel</h1>
+		<p class="txt_right">Logged in as <strong>Admin </strong>  <span class="v_line"> | </span> <a href="#"> Logout</a></p>
+	
+	<!-- Navigation -->
+	
+		<div class="navigation">
+				<ul>
+					<li><a href="Default.aspx">Dashboard</a></li>
+					<li><a href="Links.aspx">Links</a></li>
+					<li><a href="Category.aspx">Categories</a></li>
+					<li><a href="Settings.aspx">Settings</a></li>				
+				</ul>
+			
+				
+			
+		</div>
+		
+		<div class="clear"></div>
+	
+	
+		<div class="content">
+
+
+        
+        <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+		
+	<!-- Intro -->
+		
+			
+				
+	<!-- Checks -->
+	
+			
+			
+	<!-- Form -->
+			
+			
+				
+				
+				
+				
+	
+	
+	
+		
+		</div>
+		
+		
+		<p class="footer">Developed By Mohamed Abdallah <span class="v_line"> |</span>Link Directory Version 1.0 </p>
+		
+
+
+    </div>
+    </form>
+</body>
+</html>
